@@ -1,16 +1,30 @@
+/*MUDAR CORES!!!!*/
+
 body {
     background-color: #ffcc99;
-    color: #808080;
 }
 
-img {
-    width: 30%;
+header {
+    background-color: #ffcc99;
 }
 
-h1 {
-    color: #000;
+/* Classe Atribuida para a div que vai receber o logotipo */
+.logo {
+    background-color: #ffcc99;
 }
 
-h2 {
-    color: #333333;
+nav {
+    background-color: #ffcc99;
+}
+
+main {
+    background-color: #ffcc99;
+}
+
+section {
+    background-color: #ffcc99;
+}
+
+footer {
+    background-color: #ffcc99;
 }
