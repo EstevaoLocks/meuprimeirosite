@@ -6,6 +6,7 @@ body {
 
 header {
     background-color: rgb(77, 139, 195);
+    padding: 3%;
 }
 
 /* Classe Atribuida para a div que vai receber o logotipo */
@@ -19,6 +20,9 @@ nav {
 
 main {
     background-color: rgb(146, 208, 80);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 section {
@@ -27,4 +31,5 @@ section {
 
 footer {
     background-color: rgb(112, 48, 160);
+    padding: 3%;
 }
