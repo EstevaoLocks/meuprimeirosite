@@ -30,11 +30,19 @@ section {
     background-color: rgb(241, 214, 226);
 }
 
+footer {
+    background-color: rgb(112, 48, 160);
+    padding: 3%;
+}
+
 .titulo {
     line-height: 3;
 }
 
-footer {
-    background-color: rgb(112, 48, 160);
-    padding: 3%;
+p {
+    line-height: 1.5;
+}
+
+ul li {
+    line-height: 1.5;
 }
