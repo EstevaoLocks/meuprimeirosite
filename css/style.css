@@ -67,6 +67,7 @@ main {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 2em;
 }
 
 section {
@@ -87,13 +88,18 @@ h2 {
 }
 
 p {
-    line-height: 1.5;
+    margin: 1em;
+    line-height: 1.5em;
     font-size: 1.2em;
 }
 
 ul li {
     line-height: 1.5;
     font-size: 1.2em;
+}
+
+li {
+    display: inline;
 }
 
 table {
