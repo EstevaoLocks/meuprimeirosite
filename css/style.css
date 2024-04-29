@@ -53,11 +53,6 @@ header {
     padding: 3%;
 }
 
-/* Classe Atribuida para a div que vai receber o logotipo */
-.logo {
-    background-color: rgb(255, 255, 0);
-}
-
 nav {
     background-color: rgb(184, 209, 231);
 }
@@ -114,8 +109,24 @@ th, td {
     border: 3px dotted #737373;
     border-radius: 10px;
 }
+
+td {
+    padding-left: 0.5em;
+}
+
 tr:nth-child(even) {
     background-color: #dddddd;
+}
+
+/* Classe Atribuida para a div que vai receber o logotipo */
+
+.logo {
+    background-color: rgb(255, 255, 0);
+}
+
+.logo-icon {
+    height: auto;
+    width:6%;
 }
 
 .titulo {
