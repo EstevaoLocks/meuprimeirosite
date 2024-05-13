@@ -42,7 +42,7 @@
   font-style: normal;
 }
 
-/*----------*/
+/*-----Semantica-----*/
 
 body {
     background-color: rgb(191, 191, 191);
@@ -73,6 +73,8 @@ footer {
     background-color: rgb(112, 48, 160);
     padding: 3%;
 }
+
+/*-----Tags------*/
 
 h1 {
     font-size: 2em;
@@ -118,8 +120,9 @@ tr:nth-child(even) {
     background-color: #dddddd;
 }
 
-/* Classe Atribuida para a div que vai receber o logotipo */
+/*-----Classes-----*/
 
+/* Classe Atribuida para a div que vai receber o logotipo */
 .logo {
     background-color: rgb(255, 255, 0);
 }
@@ -133,4 +136,26 @@ tr:nth-child(even) {
     line-height: 3;
     text-align: center;
     font-weight: bold;
+}
+
+.linha {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-3 p {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.imggaleria {
+    width: 90%;
+    margin-right: 1%;
+    margin-left: 1%;
 }
