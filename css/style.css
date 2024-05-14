@@ -124,26 +124,50 @@ tr:nth-child(even) {
 }
 
 a:link {
-    color: inherit;
+    color: #00a3cc;
     background-color: transparent;
 }
   
 a:visited {
-   color: inherit;
+   color: #00a3cc;
    background-color: transparent;
 }
   
 a:hover {
-   color: #8c8c8c;
+   color: #bf80ff;
    background-color: transparent;
    text-decoration: underline;
 }
   
 a:active {
    color: inherit;
-   background-color: rgb(255, 255, 255, 0.5);
+   background-color: transparent;
    border-radius: 4px;
 }
+
+/*links das referencia*/
+a.referencia:link {
+    color: #000000;
+    background-color: transparent;
+}
+
+a.referencia:visited {
+    color: #000000;
+    background-color: transparent;
+ }
+
+a.referencia:hover {
+    color: #bf80ff;
+    background-color: transparent;
+    text-decoration: underline;
+ }
+   
+ a.referencia:active {
+    color: inherit;
+    background-color: rgb(255, 255, 255, 0.5);
+    border-radius: 4px;
+ }
+/*-----------------*/
 
 /* links do menu */
 a.linkmenu:link {
@@ -167,14 +191,7 @@ a.linkmenu:active {
    background-color: transparent;
    border-radius: 0px;
 }
-
 /*-----------------*/
-
-
-a.referencia {
-    margin: 1em;
-    font-size: 1.2em;
-}
 
 /*-----Classes-----*/
 
@@ -228,4 +245,14 @@ a.referencia {
 
 .iten-menu {
     padding: 10px;
+}
+
+.imgdarwin-guia-mochileiro {
+    max-width: 100%;
+    width: 336px;
+}
+
+.imgarthurdent {
+    max-width: 100%;
+    width: 500px;
 }
