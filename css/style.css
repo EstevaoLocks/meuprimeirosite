@@ -146,12 +146,12 @@ a:active {
 }
 
 /* links do menu */
-a:link.referencia {
+a.linkmenu:link {
     color: inherit;
     background-color: transparent;
 }
   
-a:visited.referencia {
+a.linkmenu:visited {
    color: inherit;
    background-color: transparent;
 }
@@ -159,20 +159,22 @@ a:visited.referencia {
 a.linkmenu:hover {
    color: inherit;
    background-color: transparent;
-   text-decoration: underline;
+   text-decoration: none;
 }
   
-a:active.referencia {
+a.linkmenu:active {
    color: inherit;
    background-color: transparent;
    border-radius: 0px;
 }
 
+/*-----------------*/
+
+
 a.referencia {
     margin: 1em;
     font-size: 1.2em;
 }
-/*-----------------*/
 
 /*-----Classes-----*/
 
