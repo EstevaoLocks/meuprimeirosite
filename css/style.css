@@ -51,11 +51,12 @@ body {
 header {
     background-color: #ffffff;
     padding: 3%;
+    padding-bottom: 0%;
 }
 
-/* nav {
-    background-color: rgb(184, 209, 231);
-} */
+nav {
+    background-color: #ffffff;
+}
 
 main {
     background-color: #e6e6e6;
@@ -96,9 +97,9 @@ ul li {
     font-size: 1.2em;
 }
 
-li {
+/* li {
     display: inline;
-}
+} */
 
 table {
     width: 80%;
@@ -120,6 +121,11 @@ td {
 
 tr:nth-child(even) {
     background-color: #dddddd;
+}
+
+a.referencia {
+    margin: 1em;
+    font-size: 1.2em;
 }
 
 /*-----Classes-----*/
@@ -170,4 +176,8 @@ tr:nth-child(even) {
 
 .divimggaleria {
     text-align: center;
+}
+
+.iten-menu {
+    padding: 10px;
 }
