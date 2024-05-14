@@ -123,10 +123,56 @@ tr:nth-child(even) {
     background-color: #dddddd;
 }
 
+a:link {
+    color: inherit;
+    background-color: transparent;
+}
+  
+a:visited {
+   color: inherit;
+   background-color: transparent;
+}
+  
+a:hover {
+   color: #8c8c8c;
+   background-color: transparent;
+   text-decoration: underline;
+}
+  
+a:active {
+   color: inherit;
+   background-color: rgb(255, 255, 255, 0.5);
+   border-radius: 4px;
+}
+
+/* links do menu */
+a:link.referencia {
+    color: inherit;
+    background-color: transparent;
+}
+  
+a:visited.referencia {
+   color: inherit;
+   background-color: transparent;
+}
+
+a.linkmenu:hover {
+   color: inherit;
+   background-color: transparent;
+   text-decoration: underline;
+}
+  
+a:active.referencia {
+   color: inherit;
+   background-color: transparent;
+   border-radius: 0px;
+}
+
 a.referencia {
     margin: 1em;
     font-size: 1.2em;
 }
+/*-----------------*/
 
 /*-----Classes-----*/
 
