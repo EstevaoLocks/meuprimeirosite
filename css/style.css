@@ -43,7 +43,6 @@
 }
 
 /*-----Semantica-----*/
-
 body {
     background-image: url(../img/fundosite.png);
 }
@@ -73,16 +72,18 @@ footer {
 }
 
 /*-----Tags------*/
-
 h1 {
+    clear: both;
     font-size: 2em;
 }
 
 h2 {
+    clear: both;
     font-size: 1.5em;
 }
 
 h3 {
+    clear: both;
     font-size: 1.35em;
 }
 
@@ -194,11 +195,32 @@ a.linkmenu:active {
 /*-----------------*/
 
 /*-----Classes-----*/
-
-/* Classe Atribuida para a div que vai receber o logotipo */
 /* .logo {
     background-color: rgb(255, 255, 0);
 } */
+
+/*----Divisão Tela----*/
+/* For Desktop */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+/*--------------------*/
 
 .logo-icon {
     height: auto;
@@ -215,7 +237,6 @@ a.linkmenu:active {
     font-weight: bold;
 }
 
-
 .linha {
     display: flex;
     flex-flow: row wrap;
@@ -223,11 +244,7 @@ a.linkmenu:active {
     margin-right: auto;
 }
 
-.col-3 {
-    width: 25%;
-}
-
-.col-3 p {
+.legendaimg {
     font-size: 1rem;
     text-align: center;
 }
@@ -244,8 +261,6 @@ a.linkmenu:active {
 
 .nomepers-titulo {
     line-height: 3;
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
     font-weight: 550;
 }
