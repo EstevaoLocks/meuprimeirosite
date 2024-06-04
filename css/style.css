@@ -220,6 +220,12 @@ a.linkmenu:active {
     width: 50%;
   }
 }
+
+@media only screen and (max-width: 480px) {
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
 /*--------------------*/
 
 .logo-icon {
