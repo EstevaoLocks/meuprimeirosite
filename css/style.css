@@ -194,6 +194,10 @@ a.linkmenu:active {
 }
 /*-----------------*/
 
+.galeria p {
+    font-size: 1em;
+}
+
 /*-----Classes-----*/
 /* .logo {
     background-color: rgb(255, 255, 0);
@@ -266,7 +270,7 @@ a.linkmenu:active {
     text-align: center;
 }
 
-.nomepers-titulo {
+.titulo-h3 {
     line-height: 3;
     text-align: center;
     font-weight: 550;
@@ -286,4 +290,10 @@ a.linkmenu:active {
     margin: 1em;
     border-radius: 0.5em;
     float: left;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
