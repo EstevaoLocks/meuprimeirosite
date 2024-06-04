@@ -297,3 +297,13 @@ a.linkmenu:active {
     flex-wrap: wrap;
     justify-content: center;
 }
+
+.icone-galeria_mochileiros {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icone-galeria_mochileiros img {
+    width: 100%;
+}
