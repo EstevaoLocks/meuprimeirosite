@@ -207,6 +207,11 @@ a.linkmenu:active {
     font-size: 1em;
 }
 
+img.container {
+    width: 100%;
+    height: auto;
+}
+
 /*-----Classes-----*/
 /* .logo {
     background-color: rgb(255, 255, 0);
@@ -287,6 +292,10 @@ a.linkmenu:active {
     margin: 1em;
     border-radius: 0.5em;
     float: left;
+}
+
+.container {
+    position: relative;
 }
 
 .galeria {
