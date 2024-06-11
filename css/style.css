@@ -80,6 +80,7 @@ h1 {
 h2 {
     clear: both;
     font-size: 1.5em;
+    margin-top: 3em;
 }
 
 h3 {
@@ -107,7 +108,6 @@ table {
     font-size: 1.2em;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 1em;
 }
 
 th, td {
