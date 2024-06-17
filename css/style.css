@@ -43,7 +43,6 @@
 }
 
 /*-----Semantica-----*/
-
 body {
     background-image: url(../img/fundosite.png);
 }
@@ -63,7 +62,7 @@ main {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 2em;
+    padding-bottom: 2rem;
 }
 
 footer {
@@ -73,28 +72,40 @@ footer {
 }
 
 /*-----Tags------*/
-
 h1 {
-    font-size: 2em;
+    clear: both;
+    font-size: 2rem;
+    line-height: 3;
+    text-align: center;
+    font-weight: bold;
 }
 
 h2 {
-    font-size: 1.5em;
+    clear: both;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    line-height: 3;
+    text-align: center;
+    font-weight: bold;
 }
 
 h3 {
-    font-size: 1.35em;
+    clear: both;
+    font-size: 1.35rem;
+    font-weight: 550;
+    line-height: 3;
+    text-align: center;
 }
 
 p {
-    margin: 1em;
-    line-height: 1.5em;
-    font-size: 1.2em;
+    margin: 1rem;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
 }
 
 ul li {
     line-height: 1.5;
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
 /* li {
@@ -103,10 +114,9 @@ ul li {
 
 table {
     width: 80%;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 1em;
 }
 
 th, td {
@@ -116,7 +126,7 @@ th, td {
 }
 
 td {
-    padding-left: 0.5em;
+    padding-left: 0.5rem;
 }
 
 tr:nth-child(even) {
@@ -193,28 +203,56 @@ a.linkmenu:active {
 }
 /*-----------------*/
 
-/*-----Classes-----*/
+.galeria p {
+    font-size: 1rem;
+}
 
-/* Classe Atribuida para a div que vai receber o logotipo */
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+/*-----Classes-----*/
 /* .logo {
     background-color: rgb(255, 255, 0);
 } */
+
+/*----Divisão Tela----*/
+/* For Desktop */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+  [class*="col-"] {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
+/*--------------------*/
 
 .logo-icon {
     height: auto;
     width:6%;
 }
 
-.titulo {
-    line-height: 3;
-    text-align: center;
-    font-weight: bold;
-}
-
-.nomepers-titulo {
-    line-height: 3;
-    text-align: center;
-    font-weight: 550;
+.iten-menu {
+    padding: 10px;
 }
 
 .linha {
@@ -224,13 +262,10 @@ a.linkmenu:active {
     margin-right: auto;
 }
 
-.col-3 {
-    width: 25%;
-}
-
-.col-3 p {
+.legendaimg {
     font-size: 1rem;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .imggaleria {
@@ -243,16 +278,68 @@ a.linkmenu:active {
     text-align: center;
 }
 
-.iten-menu {
-    padding: 10px;
-}
-
 .imgdarwin-guia-mochileiro {
     max-width: 100%;
-    width: 336px;
+    width: 168px;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    float: right;
 }
 
 .imgarthurdent {
     max-width: 100%;
-    width: 500px;
+    width: 250px;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    float: left;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.text-absolute.esquerdacima {
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    text-align: left;
+    font-size: 8vw;
+    color: #ffffff;
+}
+
+.text-absolute.center {
+    position: absolute;
+    top: calc(50% - 0.5em);
+    width: 100%;
+    text-align: center;
+    font-size: 12vw;
+    color: #ffffff;
+}
+
+.text-absolute.direitabaixo {
+    position: absolute;
+    bottom: 0%;
+    right: 5vw;
+    width: 100%;
+    text-align: right;
+    font-size: 5.5vw;
+    color: #800000;
+    -webkit-text-stroke: rgb(179, 123, 67) 0.21vw;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.icone-galeria_mochileiros {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icone-galeria_mochileiros img {
+    width: 100%;
 }
