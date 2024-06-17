@@ -207,7 +207,7 @@ a.linkmenu:active {
     font-size: 1rem;
 }
 
-.container img {
+.container .img-personagens {
     width: 100%;
     height: auto;
 }
@@ -342,4 +342,8 @@ a.linkmenu:active {
 
 .icone-galeria_mochileiros img {
     width: 100%;
+}
+
+.container-float {
+    display: table;
 }
