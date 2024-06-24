@@ -202,16 +202,6 @@ a.linkmenu:active {
    border-radius: 0px;
 }
 /*-----------------*/
-
-.galeria p {
-    font-size: 1rem;
-}
-
-.container .img-personagens {
-    width: 100%;
-    height: auto;
-}
-
 /*-----Classes-----*/
 /* .logo {
     background-color: rgb(255, 255, 0);
@@ -258,8 +248,14 @@ a.linkmenu:active {
 .linha {
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
+}
+
+.container .img-personagens {
+    width: 100%;
+    height: auto;
 }
 
 .legendaimg {
@@ -292,6 +288,10 @@ a.linkmenu:active {
     margin: 1rem;
     border-radius: 0.5rem;
     float: left;
+}
+
+.container-float {
+    display: table;
 }
 
 .container {
@@ -329,13 +329,40 @@ a.linkmenu:active {
 }
 
 .galeria {
+    margin-top: 3rem;
+}
+
+.div_caixa {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.galeria p {
+    font-size: 1rem;
+    margin: 2rem;
+    text-align: justify;
 }
 
 .icone-galeria_mochileiros {
-    width: 40%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.icone-toalha-galeria_mochileiros{
+    width: 33%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icone-sanguessuga-galeria_mochileiros{
+    width: 28%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icone-folha-galeria_mochileiros {
+    width: 28%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -344,6 +371,11 @@ a.linkmenu:active {
     width: 100%;
 }
 
-.container-float {
-    display: table;
+.div-galeria_mochileiros {
+    background-color: #cccccc;
+    display: block;
+    width: 90%;
+    height: 100%;
+    border-radius: 2rem;
+    margin-bottom: 3rem;
 }
