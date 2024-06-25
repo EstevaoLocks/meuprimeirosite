@@ -253,15 +253,8 @@ a.linkmenu:active {
     margin-right: auto;
 }
 
-.container .img-personagens {
-    width: 100%;
-    height: auto;
-}
-
-.legendaimg {
-    font-size: 1rem;
-    display: flex;
-    flex-wrap: wrap;
+.centerimggaleria {
+    justify-content: center;
 }
 
 .imggaleria {
@@ -271,6 +264,12 @@ a.linkmenu:active {
 }
 
 .divimggaleria {
+    display: flex;
+    justify-content: center;
+}
+
+.legendaimg {
+    font-size: 1rem;
     text-align: center;
 }
 
@@ -292,6 +291,11 @@ a.linkmenu:active {
 
 .container-float {
     display: table;
+}
+
+.container .img-personagens {
+    width: 100%;
+    height: auto;
 }
 
 .container {
@@ -332,7 +336,7 @@ a.linkmenu:active {
     margin-top: 3rem;
 }
 
-.div_caixa {
+.div-div_box {
     display: flex;
     justify-content: center;
     margin-bottom: 3rem;
@@ -371,11 +375,10 @@ a.linkmenu:active {
     width: 100%;
 }
 
-.div-galeria_mochileiros {
+.div_box-galeria_mochileiros {
     background-color: #cccccc;
     display: block;
     width: 90%;
     height: 100%;
     border-radius: 2rem;
-    margin-bottom: 3rem;
 }
