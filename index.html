@@ -17,14 +17,17 @@
         <div class="logo">
             <img class= "logo-icon" src="img/dont-panic-icon.png" alt="icone representante do saga O Guia do Mochileiro das Galáxias, em png">
         </div>
-        <nav class="confortaa-font">
+        <nav id="menu" class="confortaa-font">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
             <ul>
-                <li class="iten-menu"><a class="linkmenu" href="#home">HOME</a></li>
-                <li class="iten-menu"><a class="linkmenu" href="#origem">ORIGEM</a></li>
-                <li class="iten-menu"><a class="linkmenu" href="#personagens">PERSONAGENS</a></li>
+                <li class="iten-menu"><a class="linkmenu" href="#home" onclick="document.getElementById('menu-toggle').click()">HOME</a></li>
+                <li class="iten-menu"><a class="linkmenu" href="#origem" onclick="document.getElementById('menu-toggle').click()">ORIGEM</a></li>
+                <li class="iten-menu"><a class="linkmenu" href="#personagens" onclick="document.getElementById('menu-toggle').click()">PERSONAGENS</a></li>
                 <!-- <li class="iten-menu"><a class="linkmenu" href="#">AMBIENTES</a></li> -->
                 <!-- <li class="iten-menu"><a class="linkmenu" href="#">TEORIAS</a></li> -->
-                <li class="iten-menu"><a class="linkmenu" href="para-mochileiros.html">MOCHILEIROS</a></li>
+                <li class="iten-menu"><a class="linkmenu" href="para-mochileiros.html" onclick="document.getElementById('menu-toggle').click()">MOCHILEIROS</a></li>
             </ul>
         </nav>
     </header>

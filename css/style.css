@@ -51,6 +51,13 @@ header {
     background-color: #ffffff;
     padding: 3%;
     padding-bottom: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: fixed;
+    width: 100%;
+    z-index: 100; /*deixar header sobre os outros (no caso os abaixo de 100) */
+    box-sizing: border-box;
 }
 
 nav {
@@ -72,6 +79,18 @@ footer {
 }
 
 /*-----Tags------*/
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    line-height: 1.5;
+    font-size: 1.2rem;
+    margin: 0 0.75rem;
+}
+
 h1 {
     clear: both;
     font-size: 2rem;
@@ -102,15 +121,6 @@ p {
     line-height: 1.5rem;
     font-size: 1.2rem;
 }
-
-ul li {
-    line-height: 1.5;
-    font-size: 1.2rem;
-}
-
-/* li {
-    display: inline;
-} */
 
 table {
     width: 80%;
@@ -192,8 +202,9 @@ a.linkmenu:visited {
 
 a.linkmenu:hover {
    color: inherit;
-   background-color: transparent;
+   background-color: #f2f2f2;
    text-decoration: none;
+   border-radius: 0.37rem 0.37rem 0 0;
 }
   
 a.linkmenu:active {
@@ -203,9 +214,6 @@ a.linkmenu:active {
 }
 /*-----------------*/
 /*-----Classes-----*/
-/* .logo {
-    background-color: rgb(255, 255, 0);
-} */
 
 /*----Divisão Tela----*/
 /* For Desktop */
@@ -221,28 +229,29 @@ a.linkmenu:active {
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
+/*--------------------*/
 
-/* For mobile phones: */
-@media only screen and (max-width: 768px) {
-  [class*="col-"] {
-    width: 50%;
-  }
+.menu-icon {
+    display: none;
+    font-size: 2.1rem;
+    color: white;
+    cursor: pointer;
 }
 
-@media only screen and (max-width: 480px) {
-    [class*="col-"] {
-      width: 100%;
-    }
-  }
-/*--------------------*/
+#menu-toggle {
+    display: none;
+}
+
+.linkmenu {
+    color: black;
+    text-decoration: none;
+    padding: 0.75rem 0.75rem;
+    display: block;
+}
 
 .logo-icon {
     height: auto;
-    width:6%;
-}
-
-.iten-menu {
-    padding: 10px;
+    width: 5rem;
 }
 
 .linha {
@@ -381,4 +390,61 @@ a.linkmenu:active {
     width: 90%;
     height: 100%;
     border-radius: 2rem;
+}
+
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+    [class*="col-"] {
+      width: 50%;
+    }
+
+    header {
+        align-items: center;
+    }
+
+    .menu-icon {
+        display: block;
+        padding-right: 10px;
+        color: #000000;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #f2f2f2;
+        position: absolute;
+        top: 4.5rem;
+        left: 0;
+        z-index: 1;
+        padding: 0;
+    }
+
+    #menu-toggle:checked + .menu-icon + ul {
+        display: flex;
+    }
+
+    nav ul li {
+        text-align: center;
+        margin: 0;
+    }
+
+    nav ul li a {
+        padding: 1.12rem 0;
+    }
+
+    nav ul li label {
+        display: block;
+    }
+
+    a.linkmenu:hover {
+        background-color: #ffffff;
+        border-radius: 00.37rem;
+     }
+  }
+  
+@media only screen and (max-width: 480px) {
+    [class*="col-"] {
+    width: 100%;
+    }
 }
