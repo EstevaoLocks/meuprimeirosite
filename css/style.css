@@ -55,6 +55,7 @@ header {
     justify-content: space-between;
     align-items: flex-end;
     position: fixed;
+    top: 0;
     width: 100%;
     z-index: 100; /*deixar header sobre os outros (no caso os abaixo de 100) */
     box-sizing: border-box;
@@ -69,6 +70,7 @@ main {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 8.7%;
     padding-bottom: 2rem;
 }
 
