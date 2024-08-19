@@ -30,6 +30,7 @@
 
     <main>
         <section class="formulario">
+            <h2>Conte-nos sua opinião!</h2>
             <div class="div-form">
                 <form action="#">
                     <label for="fname">Qual é seu nome?</label>
@@ -38,12 +39,40 @@
                     <label for="lname">Qual é seu sobrenome?</label>
                     <input type="text" id="lname" name="lastname" placeholder="Seu sobrenome...">
                 
-                    <label for="country">Qual o seu país?</label>
-                    <select id="country" name="country">
-                        <option value="australia">Austrália</option>
-                        <option value="canada">Canadá</option>
-                        <option value="usa">USA</option>
+                    <label for="books">Qual livro da série você mais gosta?</label>
+                    <select id="books" name="books">
+                        <option value="volume1">O Guia do Mochileiro das Galáxias</option>
+                        <option value="volume2">O Restaurante do Fim do Universo</option>
+                        <option value="volume3">A Vida, O Universo e Tudo Mais</option>
+                        <option value="volume4">Até mais, e obrigado pelos peixes</option>
+                        <option value="volume5">Praticamente Inofensiva</option>
+                        <option value="volume6">E tem outra coisa</option>
+                        <option value="volume7">O Salmão da Dúvida</option>
                     </select>
+                    
+                    <div class="form-qnt-entendeu">
+                        <p>Quanto você entendeu do Guia?</p>
+                        <div class="radio-row">
+                            <input type="radio" id="foi-uma-viagem" name="qnt-entendeu" value="foi-uma-viagem">
+                            <label for="foi-uma-viagem">Foi uma viagem (~.~)</label>
+                        </div>
+                        <div class="radio-row">
+                            <input type="radio" id="pouco" name="qnt-entendeu" value="pouco">
+                            <label for="pouco">Entendi pouco :(</label>
+                        </div>
+                        <div class="radio-row">
+                            <input type="radio" id="geral" name="qnt-entendeu" value="geral">
+                            <label for="geral">Entendi até que bem :)</label>
+                        </div>
+                        <div class="radio-row">
+                            <input type="radio" id="bastante" name="qnt-entendeu" value="bastante">
+                            <label for="bastante">Entendi bastante (0 u 0)</label>
+                        </div>
+                        <div class="radio-row">
+                            <input type="radio" id="tudo" name="qnt-entendeu" value="tudo">
+                            <label for="tudo">Entendi tudo  ;></label>
+                        </div>
+                    </div>
                 
                     <input type="submit" value="Enviar">
                 </form>
@@ -52,7 +81,7 @@
     </main>
 
     <footer>
-        <p>Rodapé da Página</p>
+        <p>Feito por: Estevão Oliveira Locks</p>
     </footer>
 
 </body>

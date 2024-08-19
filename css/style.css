@@ -422,7 +422,7 @@ input[type=text], select {
     border: 0.0625rem solid #ccc;
     border-radius: 0.25rem;
     box-sizing: border-box;
-  }
+}
   
 input[type=submit] {
     width: 100%;
@@ -433,6 +433,27 @@ input[type=submit] {
     border: none;
     border-radius: 0.25rem;
     cursor: pointer;
+}
+
+.form-qnt-entendeu {
+    display: block;
+    margin-top: 1rem;
+}
+
+.form-qnt-entendeu p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.radio-row {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+
+input[type=radio] {
+    margin: 0;
+    margin-right: 0.5rem;
 }
 
 input[type=submit]:hover {
@@ -493,5 +514,9 @@ input[type=submit]:hover {
 @media only screen and (max-width: 480px) {
     [class*="col-"] {
     width: 100%;
+    }
+
+    input[type=text], select {
+        width: 100%;
     }
 }
