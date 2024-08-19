@@ -440,7 +440,7 @@ input[type=submit]:hover {
 }
 
 /* For mobile phones: */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 964px) {
     [class*="col-"] {
       width: 50%;
     }
